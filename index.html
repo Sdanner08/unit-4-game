@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+<div id='container'>	
+	<div id='parentTitleBox'>
+		<div class='titleBox'>Crystal Collector</div>
+	</div>
+
+	<div id="instructionBox">
+		  <p>
+            You will be given a random number at the start of the game.
+            <br><br>
+            There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+            <br><br>
+            You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+            <br><br>
+            The value of each crystal is hidden from you until you click on it.
+            <br><br>	
+            Each time when the game starts, the game will change to the values of each crystal.
+          </p>
+	</div>
+
+	<div id='parentRanWlBox'>
+		
+		<div class="ranNumBox">
+		</div>
+		<div class="winLoseBox">
+			<p>Wins: </p>
+				<p class="win">0</p>
+			<p>Loses: </p>
+				<p class="loss">0</p>
+		</div>
+	</div>
+
+	<div id="parentGameButtons">
+		
+			<div type="button" class="box b1 crystal1" value ='1'>	
+				<img src="assets/css/images/gem1.png">
+			</div>
+		
+			<div type="button" class="box b2 crystal2" value='2'>
+				<img src="assets/css/images/gem2.png">
+			</div>		
+				
+			<div type="button" class="box b3 crystal3" value ='3'>	
+				<img src="assets/css/images/gem3.png">
+			</div>
+				
+			<div type="button" class="box b4 crystal4" value='4'>			
+				<img src="assets/css/images/gem4.png">	
+			</div>
+		
+	</div>
+
+	<div id="parentScore">
+		<div class="score">
+			<p>Your total score is: </p>
+		</div>
+		
+		<div class="scoreDisplay">
+			<p class=scoreDisplayChild></p>
+		</div>
+	</div>
+</div>
+</body>
+<!-- jquery -->
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <!-- javascript -->
+  <script type="text/javascript" src="assets/Javascript/game.js"></script>
+</html>
